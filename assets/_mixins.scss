@@ -1,0 +1,26 @@
+@mixin mobile {
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}
+
+@mixin title {
+    text-align: center;
+    padding: 4rem 0rem;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    hr {
+        width: 6rem;
+        margin: 1rem auto;
+        border: .5px solid #e2e2e2;
+    }
+
+    p {
+        font-size: 0.7rem;
+        color: #bbbaba;
+        letter-spacing: .2rem;
+    }
+}
